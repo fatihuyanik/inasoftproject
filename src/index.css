@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans';
+}
+
+nav .container {
+    grid-template-columns: 2fr 5fr 1fr;
+}
+
+#developerinfo img {
+    transform: translateX(-50%);
+}
+
+#developercard {
+    width: 540px;
+}
+
+#developerinfo::before {
+        content: '';
+        background: url("/src/img/background.jpg") no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+        border-bottom-left-radius: 250% 200px;
+        border-bottom-right-radius: 250% 200px;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #card {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    #sum {
+        grid-template-columns: 1fr 2fr;
+    }

@@ -1,0 +1,9 @@
+.ocard {
+    width: 244px;
+    height: 192px;
+}
+
+.ocard img {
+    width: 75%;
+    margin: auto auto;
+}
